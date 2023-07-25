@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Bouhlel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1299ecf403.js" crossorigin="anonymous"></script>
+</head>
+
+<Body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Acceuil</a></li>
+                    <li><a href="#about" onclick="closemenu()">Projets</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#testemonial" onclick="closemenu()">À propos</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <a class="contact-button">Contact</a>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="content">
+                <div class="leftSide">
+                    <h1>Create the <br> buildinig you <br> want here</h1>
+                    <p>We provide the best architectural tension construction and building maintenance service for you.</p>
+                    <div class="callOut">
+                        <a class="main-button" href=""> Nos Services</a>
+                        <a class="second-button" href=""> Nos Projets --></a>
+                    </div>
+                </div>
+                <div class="rightSide">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -- -- -- -- -- -- -- About -- -- -- -- -- -- -- -->
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</Body>
+
+</html>
