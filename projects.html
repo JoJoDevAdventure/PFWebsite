@@ -16,22 +16,22 @@
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 </head>
 
-<body class="size-1140">
+<body class="size-1140 needsToBeRelative">
   <!-- HEADER -->
   <div class="header">
-    <div class="container">
+    <div id="top" class="container">
       <nav>
         <img src="images/Logo.png" class="logo">
         <ul id="sidemenu">
-          <li><a href="/index.html" onclick="closemenu()">Acceuil</a></li>
-          <li><a href="/projects.html" onclick="closemenu()">Projets</a></li>
-          <li><a href="#services" onclick="closemenu()">Services</a></li>
-          <li><a href="#about-us" onclick="closemenu()">À propos</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-          <a class="contact-button">Contact</a>
+            <li><a href="/index.html" onclick="closemenu()">Acceuil</a></li>
+            <li><a href="/projects.html" onclick="closemenu()">Projets</a></li>
+            <li><a href="/index.html" onclick="closemenu()">Services</a></li>
+            <li><a href="/index.html" onclick="closemenu()">À propos</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            <a href="/contact.html" class="contact-button">Contact</a>
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
+    </nav>
     </div>
 
   </div>
@@ -39,6 +39,10 @@
   <!-- MAIN -->
   <main class="main">
     <!-- Content -->
+    <div class="navButtons">
+      <a class="back" href="/index.html">back</a>
+      <a class="up" href="#top">up</a>
+    </div>
     <article>
       <div class="background-white full-width">
         <div class="s-12 m-6 l-five">
@@ -129,28 +133,26 @@
         <div class="margin">
           <!-- Collumn 1 -->
           <div class="s-12 m-12 l-4 margin-m-bottom-30">
-            <h3 class="text-size-16">Company Address</h3>
+            <h3 class="text-size-16">Addresse</h3>
             <p class="text-size-14">
-              Responsive Street 7<br>
-              London - United Kingdom<br>
-              Europe
+                41 avenue de l'arbre inférieur<br>
+                06000, Nice <br>
+                France, Europe<br>
             </p>
           </div>
           <!-- Collumn 2 -->
           <div class="s-12 m-12 l-4 margin-m-bottom-30">
             <h3 class="text-size-16">E-mail</h3>
             <p class="text-size-14">
-              contact@sampledomain.com<br>
-              office@sampledomain.com
+                profhima@hotmail.com
+              <br>
             </p>
           </div>
           <!-- Collumn 3 -->
           <div class="s-12 m-12 l-4 ">
-            <h3 class="text-size-16">Phone Numbers</h3>
+            <h3 class="text-size-16">Numéro de tél.</h3>
             <p class="text-size-14">
-              0800 4521 800 50<br>
-              0450 5896 625 16<br>
-              0798 6546 465 15
+                0613935385<br>
             </p>
           </div>
         </div>
@@ -161,15 +163,13 @@
     <!-- Bottom Footer -->
     <section class="padding background-dark full-width">
       <div class="text-center">
-        <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
-        <p class="text-size-12">All images is purchased from Bigstock. Do not use the images in your website.</p>
+        <p class="text-size-12">Copyright 2023, PROFHIMA</p>
       </div>
     </section>
   </footer>
   <script type="text/javascript" src="js/responsee.js"></script>
   <script type="text/javascript" src="js/jquery.events.touch.js"></script>
   <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-  <script type="text/javascript" src="js/template-scripts.js"></script>
 </body>
 
 </html>

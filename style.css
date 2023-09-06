@@ -12,6 +12,8 @@ html {
 body {
     background-color: #1B1B1B;
     color: #ffff;
+    margin: 0;
+    padding: 0px;
 }
 
 #header {
@@ -658,6 +660,39 @@ color: white;
     padding-left: 10px; /* Optional padding to create some space between content and outline */
 }
 
+.main {
+  position: relative;
+}
+
+.needsToBeRelative {
+  position: relative;
+}
+
+
+.main .navButtons {
+  position: sticky;
+  top: 20px;
+  padding: 0px;
+  width: 100vw; /* Set the width to match the screen width */
+  display: flex;
+  justify-content: space-between;
+  display: none;
+
+}
+
+.main .navButtons a{
+  text-decoration: none;
+  color: white;
+}
+
+.main .navButtons .back{
+margin-left: 50px;
+}
+
+.main .navButtons .up{
+  margin-right: 50px;
+}
+
 footer {
     justify-content: center;
     height: 50px;
@@ -671,8 +706,16 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
 
+  .hide {
+    display: none;
+  }
+
     #header {
-        height: 140vh;
+        height: 100vh;
+    }
+
+    .main .navButtons {
+      display: flex;
     }
 
     nav .fas {
@@ -740,16 +783,6 @@ nav .fas {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100%;
-  }
-  
-  .rightSide {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .rightSide img {
-    width: 100%;
     height: 100%;
   }
 
@@ -864,11 +897,13 @@ nav .fas {
 
   #about-us .main-button {
     padding: 10px 15px;
+    margin-bottom: 200px;
   }
   
   /* Advantages Section */
   #advantages {
     padding: 60px 5%;
+    padding-top: 120px;
   }
   
   #advantages .titles {
@@ -962,7 +997,8 @@ nav .fas {
   /* Projects Section */
   #projects {
     padding: 60px 5%;
-    margin-bottom: 30vh;
+    margin-bottom: 40vh;
+    padding-top: 180px;
   }
   
   #projects .titles {
@@ -988,6 +1024,10 @@ nav .fas {
     width: 100%;
     max-width: 240px;
     height: auto;
+  }
+  
+  .hide {
+    display: none;
   }
 
   #projects .projects-list .hide {
